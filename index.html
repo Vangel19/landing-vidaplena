@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VidaPlena SpA - Bienestar Integral</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h2 class="logo">🌿 VidaPlena</h2>
+      <ul class="nav-menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <h1>Tu bienestar empieza hoy</h1>
+      <p>Programas de salud integral para transformar tu vida desde adentro hacia afuera</p>
+      <button class="btn-hero" onclick="agendarConsulta()">Agenda tu consulta gratis</button>
+    </section>
+
+    <section id="servicios" class="servicios-section">
+      <h2>Nuestros Servicios</h2>
+      <div class="cards-container">
+        <article class="card">
+          <div class="card-icon">🧘</div>
+          <h3>Mindfulness</h3>
+          <p>Sesiones guiadas para reducir el estrés.</p>
+        </article>
+        
+        <article class="card">
+          <div class="card-icon">🥗</div>
+          <h3>Nutrición</h3>
+          <p>Planes personalizados con especialistas.</p>
+        </article>
+        
+        <article class="card">
+          <div class="card-icon">🏃</div>
+          <h3>Actividad Física</h3>
+          <p>Rutinas adaptadas a tu propio ritmo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto-section">
+      <h2>Contacto</h2>
+      <form class="contacto-form" onsubmit="validarFormulario(event)">
+        <input type="text" id="nombre" placeholder="Nombre completo" required />
+        <input type="email" id="correo" placeholder="Correo electrónico" required />
+        <textarea id="mensaje" placeholder="¿En qué podemos ayudarte?" rows="4" required></textarea>
+        <button type="submit" class="btn-submit">Enviar Mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 VidaPlena SpA. Sitio creado por estudiantes.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
