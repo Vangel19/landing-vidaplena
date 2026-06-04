@@ -53,13 +53,19 @@
       <h2>Contacto</h2>
       <form class="contacto-form" onsubmit="validarFormulario(event)">
         <input type="text" id="nombre" placeholder="Nombre completo" required />
-        <input type="email" id="correo" placeholder="Correo electrónico" required />
+        <input type="text" id="correo" placeholder="Correo electrónico" required />
         <textarea id="mensaje" placeholder="¿En qué podemos ayudarte?" rows="4" required></textarea>
         <button type="submit" class="btn-submit">Enviar Mensaje</button>
       </form>
     </section>
   </main>
-
+  <script>
+  function validarFormulario(event) {
+  event.preventDefault();
+  alert('✅ ¡Mensaje enviado! Nos contactaremos contigo pronto.');
+  event.target.reset();
+}
+  </script>
   <footer>
     <p>&copy; 2026 VidaPlena SpA. Sitio creado por estudiantes.</p>
   </footer>
